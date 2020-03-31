@@ -3,9 +3,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" type="image/x-icon" href="/dataING/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Statistical Rethinking Chapter 5 | dataING</title>
+<title>Statistical Rethinking Chapter 6 | dataING</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Statistical Rethinking Chapter 5" />
+<meta property="og:title" content="Statistical Rethinking Chapter 6" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Code rewitten in Python to briefly summarise the main takeaways in this chapter" />
 <meta property="og:description" content="Code rewitten in Python to briefly summarise the main takeaways in this chapter" />
@@ -15,7 +15,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-27T00:00:00-05:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://nilichen.github.io/dataING/statistical_rethinking/2020/03/27/chapter6.html"},"description":"Code rewitten in Python to briefly summarise the main takeaways in this chapter","@type":"BlogPosting","url":"https://nilichen.github.io/dataING/statistical_rethinking/2020/03/27/chapter6.html","headline":"Statistical Rethinking Chapter 5","dateModified":"2020-03-27T00:00:00-05:00","datePublished":"2020-03-27T00:00:00-05:00","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://nilichen.github.io/dataING/statistical_rethinking/2020/03/27/chapter6.html"},"description":"Code rewitten in Python to briefly summarise the main takeaways in this chapter","@type":"BlogPosting","url":"https://nilichen.github.io/dataING/statistical_rethinking/2020/03/27/chapter6.html","headline":"Statistical Rethinking Chapter 6","dateModified":"2020-03-27T00:00:00-05:00","datePublished":"2020-03-27T00:00:00-05:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -90,7 +90,7 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Statistical Rethinking Chapter 5</h1><p class="page-description">Code rewitten in Python to briefly summarise the main takeaways in this chapter</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-03-27T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Statistical Rethinking Chapter 6</h1><p class="page-description">Code rewitten in Python to briefly summarise the main takeaways in this chapter</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-03-27T00:00:00-05:00" itemprop="datePublished">
         Mar 27, 2020
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -183,8 +183,8 @@ X1 -&gt; y &lt;- X2<br>
 </p>
 <div class="flash flash-warn">
     <svg class="octicon octicon-zap" viewbox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 7H6l3-7-9 9h4l-3 7 9-9z"></path></svg>
-    <strong>Important: </strong>Multicollinearity means very strong correlation between two or more predictor variables. The consequence of it is that the posterior distribution will seem to suggest that none of the variables is reliably associated with the outcome, even if all of the variables are in reality strongly associated with the outcome. This frustrating phenomenon arises from the details of how multiple regression works. In fact, there is nothing wrong with multicollinearity. The model will work fine for prediction. You will just be frustrated trying to understand it.  
-</div>Different disciplines have different conventions for dealing with collinear variables. In some fields, it is typical to engage in some kind of data reduction procedure, like <strong>principle components</strong> or <strong>factor analysis</strong>, and then to use the components/factors as predictor variables.
+    <strong>Important: </strong>Multicollinearity means very strong correlation between two or more predictor variables. The consequence of it is that the posterior distribution will seem to suggest that none of the variables is reliably associated with the outcome, even if all of the variables are in reality strongly associated with the outcome. This frustrating phenomenon arises from the details of how multiple regression works. In fact, there is nothing wrong with multicollinearity. The model will work fine for prediction. You will just be frustrated trying to understand it...Different disciplines have different conventions for dealing with collinear variables. In some fields, it is typical to engage in some kind of data reduction procedure, like <strong>principle components</strong> or <strong>factor analysis</strong>, and then to use the components/factors as predictor variables.
+</div>
 <div class="flash">
     <svg class="octicon octicon-info" viewbox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 01-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 01-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg>
     <strong>Note: </strong>Above a correlation of 0.9, the standard deviation increases very rapidly, approaching in fact 1 as the correlation approaches 1
@@ -592,14 +592,15 @@ stds:   [0.03 0.03 0.03 0.01]
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<blockquote>
 <p>The marginal posterior for bt, the effect of treatment, is solidly zero, with a tight interval. The treatment is
-not associated with growth. The fungus seems to have hurt growth, however. Given that we know the treatment matters, because we built the simulation that way, what happened here?</p>
-<p>The problem is that fungus is mostly a consequence of treatment. This is to say that fungus is a post-treatment variable. So when we control for fungus, the model is implicitly answering the question: <strong>Once we already know whether or not a plant developed fungus, does soil treatment matter? The answer is “no,”</strong> because soil treatment has its effects on growth through reducing fungus. But we actually want to know, based on the design of the experiment, is the impact of treatment on growth. To measure this properly, we should omit the post-treatment variable fungus.
-</p>
-<div class="flash">
-    <svg class="octicon octicon-info octicon octicon-info" viewbox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 01-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 01-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg>
-    <strong>Note: </strong>It makes sense to control for pre-treatment differences, like the initial height h0, that might mask the causal influence of treatment. But including post-treatment variables can actually mask the treatment itself.
-</div>This doesn’t mean you don’t want the model that includes both treatment and fungus. The fact that including fungus zeros the coefficient for treatment suggests that the treatment works for exactly the anticipated reasons. It tells us about mechanism. But a correct inference about the treatment still depends upon omitting the post-treatment variable.
+not associated with growth. The fungus seems to have hurt growth, however. Given that we know the treatment matters, because we built the simulation that way, what happened here?
+The problem is that fungus is mostly a consequence of treatment. This is to say that fungus is a post-treatment variable. So when we control for fungus, the model is implicitly answering the question:<strong>Once we already know whether or not a plant developed fungus, does soil treatment matter? The answer is “no,”</strong> because soil treatment has its effects on growth through reducing fungus. But we actually want to know, based on the design of the experiment, is the impact of treatment on growth. To measure this properly, we should omit the post-treatment variable fungus.</p>
+<div class="flash flash-error">
+    <svg class="octicon octicon-alert" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>
+    <strong>Warning: </strong>It makes sense to control for pre-treatment differences, like the initial height h0, that might mask the causal influence of treatment. But including post-treatment variables can actually mask the treatment itself...This doesn’t mean you don’t want the model that includes both treatment and fungus. The fact that including fungus zeros the coefficient for treatment suggests that the treatment works for exactly the anticipated reasons. It tells us about mechanism. But a correct inference about the treatment still depends upon omitting the post-treatment variable.
+</div>
+</blockquote>
 
 </div>
 </div>
@@ -676,14 +677,14 @@ stds:   [0.03 0.04 0.01]
 <h3 id="Collider-of-false-sorrow">
 <a class="anchor" href="#Collider-of-false-sorrow" aria-hidden="true"><span class="octicon octicon-link"></span></a>Collider of false sorrow<a class="anchor-link" href="#Collider-of-false-sorrow"> </a>
 </h3>
-<p>Happier people are more likely to get married. Another variable that causally influences marriage is age: The more years you are alive, the more likely you are to eventually get married. Putting these three variables together, this is the causal model, with marriage being the collider:<br>
-H -&gt; M &lt;- A</p>
-<p>Simulation design:<br>
-(1) Each year, 20 people are born with uniformly distributed happiness values.<br>
-(2) Each year, each person ages one year. Happiness does not change.<br>
+<blockquote>
+<p>Happier people are more likely to get married. Another variable that causally influences marriage is age:The more years you are alive, the more likely you are to eventually get married. Putting these three variables together, this is the causal model, with marriage being the collider:<br>
+H -&gt; M &lt;- A<br>
+Simulation design:(1) Each year, 20 people are born with uniformly distributed happiness values.  (2) Each year, each person ages one year. Happiness does not change.<br>
 (3) At age 18, individuals can become married. The odds of marriage each year are proportional to an individual’s happiness.<br>
 (4) Once married, an individual remains married.<br>
 (5) After age 65, individuals leave the sample. (They move to Spain.)</p>
+</blockquote>
 
 </div>
 </div>
@@ -986,7 +987,7 @@ stds:   [0.07675015 0.13225976 0.02766089]
 <div class="text_cell_render border-box-sizing rendered_html">
 <p></p>
 <div class="flash">
-    <svg class="octicon octicon-info octicon octicon-info octicon octicon-info" viewbox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 01-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 01-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg>
+    <svg class="octicon octicon-info octicon octicon-info" viewbox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 01-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 01-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg>
     <strong>Note: </strong>The pattern above is exactly what we should expect when we condition on a collider. The collider is marriage status. It a common consequence of age and happiness. As a result, when we condition on it, we induce a spurious association between the two causes. So it looks like that age is negatively associated with happiness. But this is just a statistical association, not a causal association. Once we know whether someone is married
 </div>or not, then their age does provide information about how happy they are.
 
@@ -1000,15 +1001,15 @@ stds:   [0.07675015 0.13225976 0.02766089]
 <a class="anchor" href="#The-haunted-DAG" aria-hidden="true"><span class="octicon octicon-link"></span></a>The haunted DAG<a class="anchor-link" href="#The-haunted-DAG"> </a>
 </h3>
 <p>&lt;= due to unmeasured causes</p>
+<blockquote>
 <p>Suppose for example that we are interested in inferring the direct influence of both parents (P) and grandparents (G) on the educational achievement of children (C)...But suppose there are unmeasured, common influences (U) on parents and their children, such as neighborhoods, that are not shared by grandparents.</p>
+</blockquote>
 <p>G -&gt; P<br>
 G -&gt;C &lt;- P<br>
-P &lt;- U -&gt; C<br>
-</p>
-<div class="flash flash-warn">
-    <svg class="octicon octicon-zap octicon octicon-zap octicon octicon-zap" viewbox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 7H6l3-7-9 9h4l-3 7 9-9z"></path></svg>
-    <strong>Important: </strong>Now P is a common consequence of G and U, so if we condition on P, it will bias inference about G ! C, even if we never get to measure U. I don’t expect that fact to be immediately obvious.
-</div>
+P &lt;- U -&gt; C</p>
+<blockquote>
+<p>Important:Now P is a common consequence of G and U, so if we condition on P, it will bias inference about G -&gt; C, even if we never get to measure U.</p>
+</blockquote>
 
 </div>
 </div>
@@ -1102,14 +1103,13 @@ stds:   [0.09 0.04 0.1  0.06]
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p></p>
-<div class="flash">
-    <svg class="octicon octicon-info octicon octicon-info octicon octicon-info octicon octicon-info" viewbox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 01-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 01-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg>
-    <strong>Note: </strong>The inferred effect of parents looks too big, almost twice as large as it should be. That isn’t surprising. Some of the correlation between P and C is due to U, and the model doesn’t know
-</div>about U. That’s a simple confound. More surprising is that the model is confident that the direct effect of grandparents is to hurt their grandkids. The regression is not wrong. But a causal interpretation of that association would be.<br>
+<blockquote>
+<p>The inferred effect of parents looks too big, almost twice as large as it should be. That isn’t surprising. Some of the correlation between P and C is due to U, and the model doesn’t know
+about U. That’s a simple confound. More surprising is that the model is confident that the direct effect of grandparents is to hurt their grandkids. The regression is not wrong. But a causal interpretation of that association would be.<br>
 More educated grandparents have more educated grandkids, but this effect arises entirely through parents. Why? Because we assumed it is so. The direct effect of G in the simulation is zero.<br>
 So consider two different parents with the same education level, say for example at the median 50th centile. One of these parents
-has a highly educated grandparent. The other has a poorly educated grandparent. The only probable way, in this example, for these parents to have the same education is if they live in different types of neighborhoods. We can’t see these neighborhood effects—we haven’t measured them, recall—but the influence of neighborhood is still transmitted to the children C. So for our mythical two P with the same education, the one with the highly educated G ends up with a less well educated C. The one with the less educated G ends up with the better educated C. G predicts lower C.
+has a highly educated grandparent. The other has a poorly educated grandparent. The only probable way, in this example, for these parents to have the same education is if they live in different types of neighborhoods. We can’t see these neighborhood effects—we haven’t measured them, recall—but the influence of neighborhood is still transmitted to the children C. So for our mythical two P with the same education, the one with the highly educated G ends up with a less well educated C. The one with the less educated G ends up with the better educated C. G predicts lower C.</p>
+</blockquote>
 
 </div>
 </div>
@@ -1223,7 +1223,7 @@ stds:   [0.07 0.08 0.11 0.18 0.05]
 <div class="text_cell_render border-box-sizing rendered_html">
 <p></p>
 <div class="flash flash-error">
-    <svg class="octicon octicon-alert" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>
+    <svg class="octicon octicon-alert octicon octicon-alert" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>
     <strong>Warning: </strong>The grandparents example serves as an example of Simpson’s paradox: Including another predictor (P in this case) can reverse the direction of association between some other predictor (G) and the outcome (C). Usually, Simpson’s paradox is presented in cases where adding the new predictor helps us. But in this case, it misleads us. Simpson’s paradox is a statistical phenomenon.
 </div>
 
