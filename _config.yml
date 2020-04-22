@@ -6,15 +6,15 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: dataING
+title: fastpages
 description: An easy to use blogging platform with support for Jupyter Notebooks.
-github_username: nilichen
+github_username: fastai
 # you can comment the below line out if your repo name is not different than your baseurl
-github_repo: "dataING"
+github_repo: "fastpages"
 
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value. 
-url: "https://nilichen.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://fastpages.fast.ai" # the base hostname & protocol for your site, e.g. http://example.com
 
 ###########################################################
 #########  Special Instructions for baseurl ###############
@@ -34,14 +34,16 @@ url: "https://nilichen.github.io" # the base hostname & protocol for your site, 
 #
 # 3. You must replace the parameter `baseurl` in _action_files/settings.ini with the same value as you set here but WITHOUT QUOTES.
 #
-baseurl: "/dataING" # the subpath of your site, e.g. "/blog".
+baseurl: "" # the subpath of your site, e.g. "/blog".
 
-# Email and twitter are optional:
-email: 
-twitter_username: "DataING_Katrina"
+# Github and twitter are optional:
+minima:
+  social_links:
+    twitter: fastdotai
+    github: fastai
 
 # Set this to true to get LaTeX math equation support
-use_math: true
+use_math: 
 
 # Set this to true to display the summary of your blog post under your title on the Home page.
 show_description: true
@@ -53,7 +55,7 @@ show_image: false
 show_tags: true
 
 # Add your Google Analytics ID here if you have one and want to use it
-google_analytics:
+google_analytics: UA-57531313-5
 
 exclude:
   - docker-compose.yml
@@ -64,6 +66,12 @@ exclude:
 include:
   - _pages
 
+# This specifies what badges are turned on by default for notebook posts.
+default_badges:
+  github: true
+  binder: true
+  colab: true
+
 # Everything below here should be left alone. Modifications may break fastpages
 future: true
 theme: minima
@@ -71,11 +79,21 @@ plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-octicons
-  - jekyll-github-metadata
   - jekyll-toc
   - jekyll-twitter-plugin
   - jekyll-relative-links
   - jekyll-seo-tag
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji
+
+# See https://jekyllrb.com/docs/pagination/
+# For pagination to work, you cannot have index.md at the root of your repo, instead you must rename this file to index.html
+paginate: 15
+paginate_path: /page:num/
+
+remote_theme: jekyll/minima
 
 titles_from_headings:
   enabled:     true
